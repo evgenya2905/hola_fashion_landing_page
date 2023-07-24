@@ -23,6 +23,10 @@ body {
     --secondary-letter-spacing: 0.03em;
 }
 
+.navigation-menu {
+    display: none;
+}
+
 .navigation-title {
     font-family: 'Poppins';
     font-style: var(--main-font-style);
@@ -47,19 +51,17 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
-    padding-bottom: 80px;
-    padding-top: 40px;
+    padding: 40px 30px 80px 40px;
 }
 
 .navigation-container {
     display: flex;
-    width: 600px;
-    justify-content: space-between;
+    gap: 25px;
 }
 
 .first-section {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 100px;
     margin-bottom: -4px;
 }
@@ -69,8 +71,7 @@ body {
 }
 
 .first-section-title {
-    width: 603px;
-    height: 231px;
+    width: 80%;
     margin-bottom: 50px;
     font-family: var(--secondary-font-family);
     font-style: var(--main-font-style);
@@ -80,14 +81,8 @@ body {
     color: var(--secondary-color);
 }
 
-.first-section-img {
-    width: 657px;
-    height: 986px;
-}
-
 .first-section-text {
-    width: 576px;
-    height: 101px;
+    width: 80%;
     margin-bottom: 70px;
     font-family: var(--main-font-family);
     font-style: var(--main-font-style);
@@ -99,7 +94,7 @@ body {
 }
 
 .first-section-input {
-    width: 465px;
+    width: 60%;
     height: 63px;
     background: #E5E5E5;
     border-radius: 8px 0px 0px 8px;
@@ -174,8 +169,7 @@ input::placeholder {
     font-size: 48px;
     letter-spacing: var(--main-letter-spacing);
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding: 50px 0 60px 0;
     width: 600px;
     color: #65653E;
 }
@@ -187,8 +181,7 @@ input::placeholder {
     font-size: 20px;
     letter-spacing: var(--main-letter-spacing);
     color: #333333;
-    padding-top: 40px;
-    padding-bottom: 90px;
+    padding: 40px 0 90px 0;
 }
 
 .third-section {
@@ -227,8 +220,7 @@ input::placeholder {
     display: flex;
     gap: 20px;
     align-items: center;
-    padding-top: 70px;
-    padding-bottom: 80px;
+    padding: 70px 0 80px 0;
 }
 
 .third-section-block {
@@ -250,7 +242,7 @@ input::placeholder {
 }
 
 .third-section-block-middle {
-    width: 387px;
+    width: 384px;
     height: 535px;
     background: var(--main-color);
     box-shadow: 10px 10px 35px 2px rgba(89, 56, 14, 0.1);
@@ -258,8 +250,7 @@ input::placeholder {
 }
 
 .third-section-img {
-    margin-left: -27px;
-    margin-top: -27px;
+    margin-top: -1px;
 }
 
 .third-section-block-middle-text {
@@ -270,9 +261,7 @@ input::placeholder {
     text-align: center;
     letter-spacing: var(--main-letter-spacing);
     color: var(--white);
-    margin-top: -15px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 15px 50px 0 50px;
 }
 
 .fourth-section {
@@ -281,8 +270,7 @@ input::placeholder {
     align-items: center;
     gap: 90px;
     background: #FFEFE7;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px 0 80px 0;
 }
 
 .fourth-section-title {
@@ -384,7 +372,7 @@ input::placeholder {
 }
 
 .fifth-section-container {
-    width: 608px;
+    width: 55%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -414,7 +402,6 @@ input::placeholder {
 }
 
 .fifth-section-button {
-    width: 608px;
     height: 58px;
     background: var(--secondary-color);
     border-radius: 8px;
@@ -430,4 +417,421 @@ input::placeholder {
     background-color: #c08967;
     transition: all .2s ease-in .2s;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .first-section {
+        gap: 0;
+    }
+
+    .first-section-img-block {
+        width: 100%;
+    }
+
+    .first-section-img {
+        width: 80%;
+    }
+
+    .first-section-container {
+        margin-top: 0;
+    }
+
+    .first-section-title {
+        font-size: 3rem;
+        width: 95%;
+    }
+
+    .first-section-email {
+        width: 90%;
+    }
+
+    .first-section-input {
+        width: 65%;
+    }
+
+    .first-section-email {
+        margin-right: 20px;
+        gap: 0;
+    }
+
+    .first-section-button {
+        width: 35%;
+        height: 63px; 
+        font-size: 80%;
+    }  
+
+    .second-section {
+        padding-top: 100px;
+    }
+
+    .second-section-title {
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .second-section-subtitle {
+        font-size: 2rem;
+        padding: 20px 0 20px 0;
+    }
+
+    .third-section-title {
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .third-section-subtitle {
+        font-size: 2rem;
+        padding: 20px 0 20px 0;
+    }
+
+    .third-section-container {
+        margin: 0 40px 0 40px;
+        padding-top: 40px;
+    }
+
+    .third-section-block-middle {
+        width: 65%;
+        height: 100%;
+    }
+
+    .third-section-block-middle-text {
+        font-size: 1.3rem;
+        margin-bottom: 40px;
+    }
+
+    .third-section-block-text {
+        font-size: 1.3rem;
+    }
+
+    .third-section-block {
+        width: 50%;
+        height: 100%;
+    }
+
+    .third-section-img-both {
+        width: 100%;
+    }
+
+    .third-section-img {
+        width: 100%;
+    }
+
+    .fourth-section {
+        gap: 50px;
+    }
+
+    .fourth-section-title {
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .fourth-section-subtitle {
+        font-size: 2rem;
+    }
+
+    .fourth-section-container {
+        gap: 1rem;
+        margin: 0 3rem;
+    }
+
+    .fourth-section-img {
+        width: 50%;
+    }
+
+    .fourth-section-block-text {
+        font-size: 1rem;
+    }
+
+    .fifth-section-title {
+        height: 50px;
+        font-size: 1.5rem; 
+    }
+
+    .fifth-section-subtitle {
+        font-size: 2rem;
+    }
+
+    .fifth-section-img {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .navigation {
+        justify-content: space-evenly;
+    }
+
+    .first-section-img {
+        width: 90%;
+    }
+
+    .first-section-container {
+        margin-top: 0;
+    }
+
+    .first-section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .first-section-text {
+        font-size: 1.5rem;
+    }
+
+    .first-section-input {
+        height: 3rem;
+    }
+
+    .first-section-button {
+        height: 3rem;
+    }
+
+    .second-section-img {
+        width: 80%;
+    }
+
+    .third-section-subtitle {
+        width: 75%;
+    }
+
+    .third-section-block-text {
+        font-size: 1.2rem;
+    }
+
+    .third-section-block-middle-text {
+        font-size: 1.2rem;
+    }
+
+    .fourth-section-block-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navigation {
+        justify-content: space-between;
+        gap: 15%;
+        align-items: center;
+        height: 2rem;
+    }
+
+    .navigation-menu {
+        display: block;
+        width: 30px;
+    }
+
+    .navigation-title {
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navigation-container {
+        display: none;
+    }
+
+    .first-section-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .first-section-title {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .first-section-text {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .first-section-input {
+        height: 2rem;
+    }
+
+    .first-section-button {
+        height: 2rem;
+        font-size: 0.7rem;
+    }
+
+    input::placeholder {
+        font-size: 1rem;
+    }
+
+    .second-section {
+        padding-top: 70px;
+    }
+
+    .second-section-title {
+        font-size: 1rem;
+        height: 30px;
+        width: 30%;
+    }
+
+    .second-section-subtitle {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    .second-section-text {
+        font-size: 1rem;
+    }
+
+    .third-section {
+        padding-top: 70px;
+    }
+
+    .third-section-title {
+        font-size: 1rem;
+        height: 30px;
+        width: 30%;
+    }
+
+    .third-section-subtitle {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    .third-section-container {
+        flex-direction: column;
+    }
+
+    .third-section-block-text {
+        font-size: 1rem;
+    }
+
+    .third-section-block-middle-text {
+        width: 80%;
+        margin-left: 1.6rem;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .fourth-section {
+        gap: 1.2rem;
+    }
+
+    .fourth-section-title {
+        font-size: 1rem;
+        height: 30px;
+        width: 30%;
+    }
+
+    .fourth-section-subtitle {
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    .fourth-section-container {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .fourth-section-img {
+        width: 30%;
+    }
+
+    .fifth-title-section {
+        margin: 30px 0 30px 0;
+    }
+
+    .fifth-section-title {
+        font-size: 1rem;
+        height: 30px;
+        width: 35%; 
+    }
+
+    .fifth-section-subtitle {
+        font-size: 1.5rem;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .fifth-section-inner-container {
+        gap: 2rem;
+        margin: 0 2rem 0 2rem;
+    }
+
+    .fifth-section-container {
+        width: 50%;
+        gap: 10px;
+    }
+
+    .fifth-section-input {
+        height: 25px;
+    }
+
+    .fifth-section-input::placeholder {
+        font-size: 0.7rem;
+    }
+
+    .fifth-section-button {
+        height: 25px;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .navigation {
+        padding-bottom: 10%;    
+    }
+
+    .navigation-title {
+        font-size: 1.5rem;
+    }
+
+    .first-section-img-block {
+        display: none;
+    }
+
+    .first-section {
+        margin: 0 0 10% 10%;
+    }
+
+    .first-section-container {
+        gap: 15px;
+    }
+
+    .second-section-text {
+       text-align: center;
+    }
+
+    .third-section-subtitle {
+        padding-bottom: 0;
+    }
+
+    .third-section-block {
+        width: 100%;
+    }
+
+    .third-section-block-middle {
+        width: 100%;
+    }
+
+    .fifth-section-img {
+        position: static;
+    }
+
+    .fifth-section-container {
+        gap: 5px;
+    }
+
+    .fifth-section-container-input {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .fifth-section-input {
+        padding-left: 5px;
+    }
+
+    .fifth-section-button {
+        margin-bottom: 10px;
+    }
+
 }
